@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+<div class="calculator">
+  <div class="header">
+    <h1>Calculator</h1>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">☀️</button>
+  </div>
+
+  <div class="display" id="display">0</div>
+
+  <div class="buttons">
+    <button class="btn function" onclick="clearAll()">AC</button>
+    <button class="btn function" onclick="toggleSign()">⁺∕₋</button>
+    <button class="btn function" onclick="percentage()">%</button>
+    <button class="btn operation" onclick="setOperation('divide')">÷</button>
+
+    <button class="btn number" onclick="inputDigit('7')">7</button>
+    <button class="btn number" onclick="inputDigit('8')">8</button>
+    <button class="btn number" onclick="inputDigit('9')">9</button>
+    <button class="btn operation" onclick="setOperation('multiply')">×</button>
+
+    <button class="btn number" onclick="inputDigit('4')">4</button>
+    <button class="btn number" onclick="inputDigit('5')">5</button>
+    <button class="btn number" onclick="inputDigit('6')">6</button>
+    <button class="btn operation" onclick="setOperation('subtract')">−</button>
+
+    <button class="btn number" onclick="inputDigit('1')">1</button>
+    <button class="btn number" onclick="inputDigit('2')">2</button>
+    <button class="btn number" onclick="inputDigit('3')">3</button>
+    <button class="btn operation" onclick="setOperation('add')">+</button>
+
+    <button class="btn number wide" onclick="inputDigit('0')">0</button>
+    <button class="btn number" onclick="inputDecimal()">.</button>
+    <button class="btn operation" onclick="calculate()">=</button>
+  </div>
+
+  <div class="footer-note">Tap the icon to switch theme</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
