@@ -1,0 +1,15 @@
+# OS junk files - Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Dependencies (jaga-jaga kalau nanti pakai npm/library JS)
+node_modules/
+
+# Environment/secret files
+.env
